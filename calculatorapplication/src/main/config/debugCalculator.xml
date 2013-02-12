@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="defaultFactory" class="de.dgrether.diss.expressions.defaultimpl.DefaultExpressionFactory">
+	</bean>
+	<bean id="expressionFactory"
+		class="de.dgrether.diss.debugexpressions.DebugExpressionFactory">
+		<constructor-arg ref="defaultFactory" />
+	</bean>
+	<bean id="calculator" class="de.dgrether.diss.AddCalculator">
+		<property name="factory" ref="expressionFactory" />
+	</bean>
+
+</beans>

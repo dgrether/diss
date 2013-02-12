@@ -1,5 +1,8 @@
 package de.dgrether.diss;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
 import de.dgrether.diss.debugexpressions.DebugExpressionFactory;
 import de.dgrether.diss.expressions.ExpressionFactory;
 import de.dgrether.diss.expressions.defaultimpl.DefaultExpressionFactory;
@@ -9,6 +12,13 @@ import de.dgrether.diss.negation.debug.NegationDebugExpressionFactoryImpl;
 public class Main {
 
 	public static void main(String[] args) {
+//		ApplicationContext context = new FileSystemXmlApplicationContext(new String[] {"./src/main/config/addCalculator.xml"});
+		ApplicationContext context = new FileSystemXmlApplicationContext(new String[] {"./src/main/config/debugCalculator.xml"});
+		Calculator calc = context.getBean("calculator", Calculator.class);
+		System.out.println("Result: " + calc.calculate());
+	}
+	
+	public static void mainOld(String[] args) {
 		AddCalculator calculator = new AddCalculator();
 		int result;
 		
