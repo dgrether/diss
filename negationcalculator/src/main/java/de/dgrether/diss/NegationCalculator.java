@@ -1,6 +1,7 @@
 package de.dgrether.diss;
 
 import de.dgrether.diss.expressions.Expression;
+import de.dgrether.diss.expressions.ExpressionFactory;
 import de.dgrether.diss.negation.NegationExpressionFactory;
 import de.dgrether.diss.negation.NegationExpressionFactoryImpl;
 
@@ -25,8 +26,8 @@ public class NegationCalculator implements Calculator {
 		return factory;
 	}
 
-	public void setFactory(NegationExpressionFactory factory) {
-		this.factory = factory;
+	public void setFactory(ExpressionFactory factory) {
+		this.factory = (NegationExpressionFactory)factory;
 		this.delegate.setFactory(factory);
 	}
 
