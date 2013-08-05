@@ -14,7 +14,7 @@ public class Main {
 	public static void main(String[] args) {
 //		ApplicationContext context = new FileSystemXmlApplicationContext(new String[] {"./src/main/config/addCalculator.xml"});
 		ApplicationContext context = new FileSystemXmlApplicationContext(new String[] {"./src/main/config/debugCalculator.xml"});
-		Calculator calc = context.getBean("calculator", Calculator.class);
+		Calculator calc = context.getBean(Calculator.class);
 		System.out.println("Result: " + calc.calculate());
 	}
 	
