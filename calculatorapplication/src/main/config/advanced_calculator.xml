@@ -6,8 +6,7 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean id="expressionFactory" class="de.dgrether.diss.expressions.defaultimpl.DefaultExpressionFactory">
 	</bean>
 	
-	<bean id="calculator"
-		class="de.dgrether.diss.AddCalculator">
+	<bean id="calculator" class="de.dgrether.diss.AdvancedCalculator">
 		<property name="factory" ref="expressionFactory" />
 	</bean>
 </beans>

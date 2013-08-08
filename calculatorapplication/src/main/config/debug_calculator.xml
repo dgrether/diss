@@ -6,10 +6,10 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean id="defaultFactory" class="de.dgrether.diss.expressions.defaultimpl.DefaultExpressionFactory">
 	</bean>
 	<bean id="expressionFactory"
-		class="de.dgrether.diss.debugexpressions.DebugExpressionFactory">
+		class="de.dgrether.diss.debug.expressions.DebugExpressionFactory">
 		<constructor-arg ref="defaultFactory" />
 	</bean>
-	<bean id="calculator" class="de.dgrether.diss.AddCalculator">
+	<bean id="calculator" class="de.dgrether.diss.AdvancedCalculator">
 		<property name="factory" ref="expressionFactory" />
 	</bean>
 
