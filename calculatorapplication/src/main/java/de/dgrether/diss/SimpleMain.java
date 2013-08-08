@@ -15,7 +15,6 @@ public class SimpleMain {
 	
 		SimpleDebugCalculator dbCalculator = new SimpleDebugCalculator();
 		System.out.println("Result: " + dbCalculator.calculate());
-	
 	}
 
 }
