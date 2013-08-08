@@ -19,7 +19,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>de.dgrether.diss</groupId>
-			<artifactId>calculator</artifactId>
+			<artifactId>expressions</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

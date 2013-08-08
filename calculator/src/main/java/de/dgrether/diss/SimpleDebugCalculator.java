@@ -1,12 +1,12 @@
-package de.dgrether.diss.debug;
+package de.dgrether.diss;
 
 import de.dgrether.diss.debug.expressions.DebugAddition;
 import de.dgrether.diss.debug.expressions.DebugConstant;
+import de.dgrether.diss.debug.negation.DebugNegation;
 import de.dgrether.diss.expressions.Constant;
 import de.dgrether.diss.expressions.Expression;
 import de.dgrether.diss.expressions.defaultimpl.AdditionImpl;
 import de.dgrether.diss.expressions.defaultimpl.ConstantImpl;
-import de.dgrether.diss.negation.debug.DebugNegation;
 import de.dgrether.diss.negation.defaultimpl.NegationImpl;
 
 /**

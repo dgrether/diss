@@ -1,10 +1,10 @@
 package de.dgrether.diss;
 
 import de.dgrether.diss.debug.expressions.DebugExpressionFactory;
+import de.dgrether.diss.debug.negation.NegationDebugExpressionFactoryImpl;
 import de.dgrether.diss.expressions.ExpressionFactory;
 import de.dgrether.diss.expressions.defaultimpl.DefaultExpressionFactory;
 import de.dgrether.diss.negation.NegationExpressionFactoryImpl;
-import de.dgrether.diss.negation.debug.NegationDebugExpressionFactoryImpl;
 
 public class AdvancedMain {
 

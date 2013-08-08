@@ -1,6 +1,5 @@
 package de.dgrether.diss;
 
-import de.dgrether.diss.debug.SimpleDebugCalculator;
 
 /**
  * @author dgrether

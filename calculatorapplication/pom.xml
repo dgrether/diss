@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.dgrether.diss</groupId>
-	<artifactId>calculatorapplication</artifactId>
+	<artifactId>application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<build>
 		<plugins>
@@ -19,12 +19,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>de.dgrether.diss</groupId>
-			<artifactId>negation</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>de.dgrether.diss</groupId>
-			<artifactId>debug</artifactId>
+			<artifactId>calculator</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
