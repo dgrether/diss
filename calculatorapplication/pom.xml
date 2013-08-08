@@ -19,7 +19,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>de.dgrether.diss</groupId>
-			<artifactId>negationcalculator</artifactId>
+			<artifactId>negation</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>

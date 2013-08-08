@@ -1,6 +1,6 @@
 package de.dgrether.diss;
 
-import de.dgrether.diss.debugexpressions.DebugExpressionFactory;
+import de.dgrether.diss.debug.expressions.DebugExpressionFactory;
 import de.dgrether.diss.expressions.ExpressionFactory;
 import de.dgrether.diss.expressions.defaultimpl.DefaultExpressionFactory;
 import de.dgrether.diss.negation.NegationExpressionFactoryImpl;
