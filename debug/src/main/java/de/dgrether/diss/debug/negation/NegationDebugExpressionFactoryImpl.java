@@ -1,4 +1,4 @@
-package de.dgrether.diss.negation.debug;
+package de.dgrether.diss.debug.negation;
 
 import de.dgrether.diss.expressions.Addition;
 import de.dgrether.diss.expressions.Constant;

@@ -1,4 +1,4 @@
-package de.dgrether.diss.debugexpressions;
+package de.dgrether.diss.debug.expressions;
 
 import de.dgrether.diss.expressions.Addition;
 import de.dgrether.diss.expressions.Expression;
@@ -7,6 +7,10 @@ public class DebugAddition implements Addition {
 
 	private Addition delegate;
 
+	public DebugAddition(Addition add) {
+		this.delegate = add;
+	}
+	
 	public int eval() {
 		System.out.println("Evaluating Addition " + this.print());
 		return delegate.eval();
@@ -24,9 +28,6 @@ public class DebugAddition implements Addition {
 		return delegate.getRight();
 	}
 
-	public DebugAddition(Addition add) {
-		this.delegate = add;
-	}
 
 
 }
