@@ -4,11 +4,11 @@ import de.dgrether.diss.expressions.Expression;
 import de.dgrether.diss.expressions.ExpressionFactory;
 import de.dgrether.diss.expressions.defaultimpl.DefaultExpressionFactory;
 
-public class AddCalculator implements Calculator {
+public class AdvancedCalculator implements Calculator {
 
 	private ExpressionFactory factory = new DefaultExpressionFactory();;
 	
-	public AddCalculator(){}
+	public AdvancedCalculator(){}
 	
 	public int calculate(){
 		Expression a = this.factory.createConstant(17);

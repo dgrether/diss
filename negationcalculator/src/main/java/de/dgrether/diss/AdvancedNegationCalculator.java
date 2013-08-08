@@ -4,12 +4,12 @@ import de.dgrether.diss.expressions.Expression;
 import de.dgrether.diss.negation.NegationExpressionFactory;
 import de.dgrether.diss.negation.NegationExpressionFactoryImpl;
 
-public class NegationCalculator implements Calculator {
+public class AdvancedNegationCalculator implements Calculator {
 	
 	private NegationExpressionFactory factory;
-	private AddCalculator delegate;
+	private AdvancedCalculator delegate;
 	
-	public NegationCalculator(AddCalculator delegate){
+	public AdvancedNegationCalculator(AdvancedCalculator delegate){
 		this.delegate = delegate;
 		setFactory(new NegationExpressionFactoryImpl(delegate.getFactory()));
 	}

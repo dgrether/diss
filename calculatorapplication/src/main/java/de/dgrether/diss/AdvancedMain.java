@@ -6,10 +6,10 @@ import de.dgrether.diss.expressions.defaultimpl.DefaultExpressionFactory;
 import de.dgrether.diss.negation.NegationExpressionFactoryImpl;
 import de.dgrether.diss.negation.debug.NegationDebugExpressionFactoryImpl;
 
-public class Main {
+public class AdvancedMain {
 
 	public static void main(String[] args) {
-		AddCalculator calculator = new AddCalculator();
+		AdvancedCalculator calculator = new AdvancedCalculator();
 		int result;
 		
 		System.out.println("default...");
@@ -25,7 +25,7 @@ public class Main {
 		System.out.println();
 		
 		System.out.println("negation works with default debug...");
-		NegationCalculator negCalculator = new NegationCalculator(calculator);
+		AdvancedNegationCalculator negCalculator = new AdvancedNegationCalculator(calculator);
 		result = negCalculator.calculate();
 		System.out.println("Result " + result);
 		System.out.println();
